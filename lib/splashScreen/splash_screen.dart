@@ -1,7 +1,7 @@
 import 'dart:async';
-
+import 'package:driver_app/authentication/loginscreen.dart';
 import 'package:flutter/material.dart';
-import 'package:driver_app/authentication/signup_screen.dart';
+
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
 
@@ -16,7 +16,7 @@ class _SplashScreenState extends State<SplashScreen> {
       Navigator.push(
         context,
         MaterialPageRoute(
-          builder: (context) => const SignUpScreen(),
+          builder: (context) => const LoginScreen(),
         ),
       );
     });
